@@ -47,11 +47,11 @@ num = 0
 for n in range(3333,9999) :
     if n%1234 == 0 :
         continue
-    num += n
+        num += n
     if num > 100000 : 
         break
             
-print(num-n)
+print(num)
 
 ## 9 ##
 
