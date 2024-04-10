@@ -19,24 +19,20 @@ label1.pack()
 
 window.mainloop()
 
-
 ## 4 ##
+
 #답만 작성
 #(1) LEFT
 #(2) RIGHT
 #(3) TOP
 #(4) BOTTOM
 
-
 ## 5 ##
-
 
 from tkinter import *
 from time import *
 
-
 fnameList = ["one.gif", "two.gif", "three.gif"]
-
 num = 0
 
 def clickNext():
@@ -49,21 +45,15 @@ def clickPrev():
     num = (num - 1) % len(fnameList)
     pLabel.configure(text=fnameList[num])
 
-
 val = Tk()
-
-
 
 pLabel = Label(val, text=fnameList[num])
 pLabel.pack()
 
-
 prevButton = Button(val, text="이전", command=clickPrev)
 prevButton.pack(side=LEFT)
 
-
 nextButton = Button(val, text="다음", command=clickNext)
 nextButton.pack(side=RIGHT)
-
 
 val.mainloop()
